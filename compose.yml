@@ -4,8 +4,7 @@ services:
     network_mode: host
     volumes:
       - ./kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf:ro
-      # - dhcp-data:/var/lib/kea
-    # restart: unless-stopped
+    restart: unless-stopped
 
-volumes:
-  dhcp-data:
+# volumes:
+#   dhcp-data:
